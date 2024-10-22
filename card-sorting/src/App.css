@@ -1,0 +1,46 @@
+/* Basic styles for app */
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  position: relative;
+  height: 200px;
+  margin: 10%;
+  padding-right:40%;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+/* Shuffle animation */
+.card.shuffling {
+  opacity: 0.8;
+  transform: scale(1.1); /* Slightly scale the card during shuffle */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
